@@ -1,0 +1,11 @@
+mqtt:  
+  broker: your.mqtt.ip.address  
+  port: 1883  
+  client_id: home-assistant-1  
+  username: YOURUSERNAME  
+  password: YOURPASSWORD  
+  
+light:
+- platform: mqtt_json
+  command_topic: "angie/living-room-light-switch/set"
+  state_topic: "angie/living-room-light-switch"
